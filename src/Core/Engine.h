@@ -1,6 +1,7 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 #include <memory>
+#include <chrono>
 #ifdef PLATFORM_WINDOWS
 #include "../Platforms/Windows/WindowsWindow.h"
 #else
@@ -19,6 +20,7 @@ namespace MyEngine {
         private:
             bool m_running = true;
             std::unique_ptr<MyWindow> m_Window;
+            float m_StartTime;
     };
 }
 #endif

@@ -19,7 +19,7 @@ else ()
     list(APPEND SOURCE_FILES src/Platforms/Linux/LinuxWindow.h src/Platforms/Linux/LinuxWindow.cpp)
 endif ()
 
-list(APPEND SOURCE_FILES src/Core/Engine.h src/Core/Engine.cpp src/Core/EntryPoint.cpp src/Core/MyWindow.h)
+list(APPEND SOURCE_FILES src/Core/Engine.h src/Core/Engine.cpp src/Core/EntryPoint.cpp src/Core/MyWindow.h src/Core/Time.h)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
