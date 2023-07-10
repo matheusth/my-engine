@@ -7,6 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 project(MyEngine)
 
 option(PLATFORM_WINDOWS "Build for windows?" OFF)
+option(CMAKE_EXPORT_COMPILE_COMMANDS "Export compile commands?" ON)
 
 if (PLATFORM_WINDOWS)
     list(APPEND COMPILE_DEFS "PLATFORM_WINDOWS")
